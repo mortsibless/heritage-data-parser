@@ -216,3 +216,27 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# ====================================================================
+# Chained Stars Technology - Custom Data Pipeline Exclusions
+# ====================================================================
+# Ignore any compiled SQLite database format variations
+*.db
+*.sqlite
+*.sqlite3
+*.db-journal
+*.sqlite3-journal
+
+# Ignore raw data source inputs and processing folders
+/data/
+/data/raw/
+/data/output/
+
+# Ignore massive digital file source archives
+*.pdf
+*.zip
+*.tar.gz
+*.7z
+*.txt
+!README.md
+!/schemas/*.sql
