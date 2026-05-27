@@ -1,0 +1,157 @@
+{
+  "_notes": "Config derived from direct inspection of the 1913 Ewe Bible PDF (ABBYY FineReader 2020 digitization, 1063 pages, two-column layout, selectable text)",
+
+  "language": "ewe",
+  "year": 1913,
+  "pdf_total_pages": 1063,
+
+  "layout": {
+    "columns": 2,
+    "has_center_crossref_column": true,
+    "page_header_format": "PAGE_NUM   BOOK_NAME   [chapter_start, verse_range]",
+    "verse_numbers_inline": true,
+    "chapter_headings_centered": true
+  },
+
+  "page_numbering": {
+    "old_testament": {
+      "pdf_pages_start": 5,
+      "pdf_pages_end": 769,
+      "printed_page_start": 1,
+      "note": "OT printed page numbers restart from 1"
+    },
+    "new_testament": {
+      "pdf_pages_start": 776,
+      "pdf_pages_end": 1055,
+      "printed_page_start": 1,
+      "note": "NT printed page numbers also restart from 1 — use testament field to disambiguate"
+    },
+    "front_matter_pdf_pages": [1, 2, 3, 4],
+    "back_matter_pdf_pages": [1056, 1063]
+  },
+
+  "book_names": {
+    "old_testament": {
+      "MOSE I":        { "standard": "Genesis",        "chapters": 50 },
+      "MOSE II":       { "standard": "Exodus",         "chapters": 40 },
+      "MOSE III":      { "standard": "Leviticus",      "chapters": 27 },
+      "MOSE IV":       { "standard": "Numbers",        "chapters": 36 },
+      "MOSE V":        { "standard": "Deuteronomy",    "chapters": 34 },
+      "YOSUA":         { "standard": "Joshua",         "chapters": 24 },
+      "WONUDROLA":     { "standard": "Judges",         "chapters": 21 },
+      "RUT":           { "standard": "Ruth",           "chapters": 4  },
+      "SAMUEL I":      { "standard": "1 Samuel",       "chapters": 31 },
+      "SAMUEL II":     { "standard": "2 Samuel",       "chapters": 24 },
+      "FIAWO I":       { "standard": "1 Kings",        "chapters": 22 },
+      "FIAWO II":      { "standard": "2 Kings",        "chapters": 25 },
+      "KRONIKA I":     { "standard": "1 Chronicles",   "chapters": 29 },
+      "KRONIKA II":    { "standard": "2 Chronicles",   "chapters": 36 },
+      "EZRA":          { "standard": "Ezra",           "chapters": 10 },
+      "NEHEMYA":       { "standard": "Nehemiah",       "chapters": 13 },
+      "ESTER":         { "standard": "Esther",         "chapters": 10 },
+      "HIOB":          { "standard": "Job",            "chapters": 42 },
+      "PSALMOWO":      { "standard": "Psalms",         "chapters": 150},
+      "SALOMO FE LODODOWO": { "standard": "Proverbs",  "chapters": 31 },
+      "SALOMO NYAGBLOLA":   { "standard": "Ecclesiastes", "chapters": 12 },
+      "HAWO FE HA":    { "standard": "Song of Solomon","chapters": 8  },
+      "YESAYA":        { "standard": "Isaiah",         "chapters": 66 },
+      "YEREMYA":       { "standard": "Jeremiah",       "chapters": 52 },
+      "KONYIFAHA":     { "standard": "Lamentations",   "chapters": 5  },
+      "HEZEKIEL":      { "standard": "Ezekiel",        "chapters": 48 },
+      "DANIEL":        { "standard": "Daniel",         "chapters": 12 },
+      "HOSEA":         { "standard": "Hosea",          "chapters": 14 },
+      "YOEL":          { "standard": "Joel",           "chapters": 4  },
+      "AMOS":          { "standard": "Amos",           "chapters": 9  },
+      "OBADYA":        { "standard": "Obadiah",        "chapters": 1  },
+      "YONA":          { "standard": "Jonah",          "chapters": 4  },
+      "MIHA":          { "standard": "Micah",          "chapters": 7  },
+      "NAHUM":         { "standard": "Nahum",          "chapters": 3  },
+      "HABAKUK":       { "standard": "Habakkuk",       "chapters": 3  },
+      "ZEFANYA":       { "standard": "Zephaniah",      "chapters": 3  },
+      "HAGAI":         { "standard": "Haggai",         "chapters": 2  },
+      "ZAHARYA":       { "standard": "Zechariah",      "chapters": 14 },
+      "MALEAHI":       { "standard": "Malachi",        "chapters": 3  }
+    },
+    "new_testament": {
+      "MATEO":         { "standard": "Matthew",        "chapters": 28 },
+      "MARKO":         { "standard": "Mark",           "chapters": 16 },
+      "LUKA":          { "standard": "Luke",           "chapters": 24 },
+      "YOHANES":       { "standard": "John",           "chapters": 21 },
+      "APOSTOLOWO":    { "standard": "Acts",           "chapters": 28 },
+      "ROMATOWO":      { "standard": "Romans",         "chapters": 16 },
+      "KORINTOTOWO I": { "standard": "1 Corinthians",  "chapters": 16 },
+      "KORINTOTOWO II":{ "standard": "2 Corinthians",  "chapters": 13 },
+      "GALATIATOWO":   { "standard": "Galatians",      "chapters": 6  },
+      "EFESOTOWO":     { "standard": "Ephesians",      "chapters": 6  },
+      "FILIPITOWO":    { "standard": "Philippians",    "chapters": 4  },
+      "KOLOSETOWO":    { "standard": "Colossians",     "chapters": 4  },
+      "TESALONIKATOWO I":  { "standard": "1 Thessalonians", "chapters": 5 },
+      "TESALONIKATOWO II": { "standard": "2 Thessalonians", "chapters": 3 },
+      "TIMOTEO I":     { "standard": "1 Timothy",      "chapters": 6  },
+      "TIMOTEO II":    { "standard": "2 Timothy",      "chapters": 4  },
+      "TITO":          { "standard": "Titus",          "chapters": 3  },
+      "FILEMON":       { "standard": "Philemon",       "chapters": 1  },
+      "HEBRITOWO":     { "standard": "Hebrews",        "chapters": 13 },
+      "YAKOBO":        { "standard": "James",          "chapters": 5  },
+      "PETRO I":       { "standard": "1 Peter",        "chapters": 5  },
+      "PETRO II":      { "standard": "2 Peter",        "chapters": 3  },
+      "YOHANES I":     { "standard": "1 John",         "chapters": 5  },
+      "YOHANES II":    { "standard": "2 John",         "chapters": 1  },
+      "YOHANES III":   { "standard": "3 John",         "chapters": 1  },
+      "YUDA":          { "standard": "Jude",           "chapters": 1  },
+      "NYADEDEFIA":    { "standard": "Revelation",     "chapters": 22 }
+    }
+  },
+
+  "ocr_artifacts": {
+    "_note": "ABBYY FineReader errors seen in the actual PDF text — normalize these",
+    "character_substitutions": {
+      "\\\\Vu": "wu",
+      "\\\\Ve": "we",
+      "\\^aa": "aa",
+      "riku":  "ŋku",
+      "riuti": "ŋuti",
+      "riuto": "ŋuto",
+      "riu":   "ŋu",
+      "wbvo":  "wɔvo",
+      "wbva":  "wɔva",
+      "wbwo":  "wɔwɔ",
+      "wbwu":  "wɔwu",
+      "wbho":  "wɔhɔ",
+      "wbto":  "wɔto",
+      "wbko":  "wɔkɔ",
+      "wbge":  "wɔge",
+      "wbgblo":"wɔgblo",
+      "wblo":  "wɔlo",
+      "wbwoe": "wɔwɔe",
+      "wbdu":  "wɔdu",
+      "wbdo":  "wɔdo",
+      "wd":    "wɔ",
+      "wb":    "wɔ",
+      "adaka\\\\Vu": "adakawu",
+      "adaka\\^u":   "adakawu"
+    },
+    "footnote_marker_pattern": "^[a-z]\\s+[A-Z]",
+    "crossref_pattern": "[A-Z][a-z]+\\.\\s+\\d+[,\\s\\d:-]+",
+    "section_heading_pattern": "centered text between columns, title-case"
+  },
+
+  "extraction": {
+    "page_header_regex": "^\\s*(\\d+)\\s+([A-ZÄÖÜ\\s\\.]+?)\\s+\\[([\\d,\\s\\-]+)\\]",
+    "verse_inline_regex": "(?<![\\w])([1-9][0-9]{0,2})\\s+(?=[A-ZÄÖÜ\\wƒʋɖɔŋ])",
+    "chapter_range_from_header": true,
+    "skip_line_patterns": [
+      "^\\s*\\d+\\s+[A-Z\\s]+\\s+\\[",
+      "^[a-z]\\s+[A-Za-z]+\\.\\s+\\d+",
+      "^\\s*[a-z]\\s*$",
+      "^\\f",
+      "^\\s{20,}[A-Z][a-z]"
+    ]
+  },
+
+  "special_characters": {
+    "ewe_specific": ["ƒ", "ʋ", "ɖ", "ɔ", "ŋ", "ɛ"],
+    "encoding": "UTF-8",
+    "normalization": "NFC"
+  }
+}

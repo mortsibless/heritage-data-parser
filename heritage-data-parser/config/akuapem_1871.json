@@ -1,0 +1,111 @@
+{
+  "_notes": "Config for the Akuapem Twi Bible (1871). Structure expected to mirror the Ewe 1913 edition — update after direct PDF inspection.",
+
+  "language": "akuapem_twi",
+  "year": 1871,
+
+  "layout": {
+    "columns": 2,
+    "has_center_crossref_column": true,
+    "page_header_format": "PAGE_NUM   BOOK_NAME   [chapter_start, verse_range]",
+    "verse_numbers_inline": true,
+    "chapter_headings_centered": true
+  },
+
+  "book_names": {
+    "old_testament": {
+      "MOSE I":        { "standard": "Genesis",        "chapters": 50 },
+      "MOSE II":       { "standard": "Exodus",         "chapters": 40 },
+      "MOSE III":      { "standard": "Leviticus",      "chapters": 27 },
+      "MOSE IV":       { "standard": "Numbers",        "chapters": 36 },
+      "MOSE V":        { "standard": "Deuteronomy",    "chapters": 34 },
+      "JOSUA":         { "standard": "Joshua",         "chapters": 24 },
+      "ABISA":         { "standard": "Judges",         "chapters": 21 },
+      "RUT":           { "standard": "Ruth",           "chapters": 4  },
+      "SAMUEL I":      { "standard": "1 Samuel",       "chapters": 31 },
+      "SAMUEL II":     { "standard": "2 Samuel",       "chapters": 24 },
+      "AHEMFO I":      { "standard": "1 Kings",        "chapters": 22 },
+      "AHEMFO II":     { "standard": "2 Kings",        "chapters": 25 },
+      "KRONIKA I":     { "standard": "1 Chronicles",   "chapters": 29 },
+      "KRONIKA II":    { "standard": "2 Chronicles",   "chapters": 36 },
+      "EZRA":          { "standard": "Ezra",           "chapters": 10 },
+      "NEHEMIA":       { "standard": "Nehemiah",       "chapters": 13 },
+      "ESTER":         { "standard": "Esther",         "chapters": 10 },
+      "HIOB":          { "standard": "Job",            "chapters": 42 },
+      "NNWOM":         { "standard": "Psalms",         "chapters": 150},
+      "NNSE3E":        { "standard": "Proverbs",       "chapters": 31 },
+      "OHAWHO":        { "standard": "Ecclesiastes",   "chapters": 12 },
+      "YESAYA":        { "standard": "Isaiah",         "chapters": 66 },
+      "YEREMIA":       { "standard": "Jeremiah",       "chapters": 52 },
+      "EZEKIEL":       { "standard": "Ezekiel",        "chapters": 48 },
+      "DANIEL":        { "standard": "Daniel",         "chapters": 12 },
+      "HOSEA":         { "standard": "Hosea",          "chapters": 14 },
+      "YOEL":          { "standard": "Joel",           "chapters": 4  },
+      "AMOS":          { "standard": "Amos",           "chapters": 9  },
+      "OBADYA":        { "standard": "Obadiah",        "chapters": 1  },
+      "YONA":          { "standard": "Jonah",          "chapters": 4  },
+      "MIHA":          { "standard": "Micah",          "chapters": 7  },
+      "NAHUM":         { "standard": "Nahum",          "chapters": 3  },
+      "HABAKUK":       { "standard": "Habakkuk",       "chapters": 3  },
+      "ZEFANYA":       { "standard": "Zephaniah",      "chapters": 3  },
+      "HAGAI":         { "standard": "Haggai",         "chapters": 2  },
+      "ZAKARIA":       { "standard": "Zechariah",      "chapters": 14 },
+      "MALAKI":        { "standard": "Malachi",        "chapters": 3  }
+    },
+    "new_testament": {
+      "MATEO":         { "standard": "Matthew",        "chapters": 28 },
+      "MARKO":         { "standard": "Mark",           "chapters": 16 },
+      "LUKA":          { "standard": "Luke",           "chapters": 24 },
+      "YOHANE":        { "standard": "John",           "chapters": 21 },
+      "APOSTOLFO":     { "standard": "Acts",           "chapters": 28 },
+      "ROMATOFO":      { "standard": "Romans",         "chapters": 16 },
+      "KORINTOTOFO I": { "standard": "1 Corinthians",  "chapters": 16 },
+      "KORINTOTOFO II":{ "standard": "2 Corinthians",  "chapters": 13 },
+      "GALATIAFO":     { "standard": "Galatians",      "chapters": 6  },
+      "EFESOFO":       { "standard": "Ephesians",      "chapters": 6  },
+      "FILIPIFO":      { "standard": "Philippians",    "chapters": 4  },
+      "KOLOSEFO":      { "standard": "Colossians",     "chapters": 4  },
+      "TESALONIKAFO I":  { "standard": "1 Thessalonians", "chapters": 5 },
+      "TESALONIKAFO II": { "standard": "2 Thessalonians", "chapters": 3 },
+      "TIMOTEOFO I":   { "standard": "1 Timothy",      "chapters": 6  },
+      "TIMOTEOFO II":  { "standard": "2 Timothy",      "chapters": 4  },
+      "TITO":          { "standard": "Titus",          "chapters": 3  },
+      "FILEMON":       { "standard": "Philemon",       "chapters": 1  },
+      "EBRAFOFO":      { "standard": "Hebrews",        "chapters": 13 },
+      "YAKOBO":        { "standard": "James",          "chapters": 5  },
+      "PETRO I":       { "standard": "1 Peter",        "chapters": 5  },
+      "PETRO II":      { "standard": "2 Peter",        "chapters": 3  },
+      "YOHANE I":      { "standard": "1 John",         "chapters": 5  },
+      "YOHANE II":     { "standard": "2 John",         "chapters": 1  },
+      "YOHANE III":    { "standard": "3 John",         "chapters": 1  },
+      "YUDA":          { "standard": "Jude",           "chapters": 1  },
+      "NYANSAWOAHUNU": { "standard": "Revelation",     "chapters": 22 }
+    }
+  },
+
+  "ocr_artifacts": {
+    "_note": "Populate after inspecting your local Akuapem PDF with --probe flag",
+    "character_substitutions": {},
+    "footnote_marker_pattern": "^[a-z]\\s+[A-Z]",
+    "crossref_pattern": "[A-Z][a-z]+\\.\\s+\\d+[,\\s\\d:-]+"
+  },
+
+  "special_characters": {
+    "twi_specific": ["ɛ", "ɔ", "ŋ"],
+    "encoding": "UTF-8",
+    "normalization": "NFC"
+  },
+
+  "extraction": {
+    "page_header_regex": "^\\s*(\\d+)\\s+([A-ZÄÖÜ\\s\\.]+?)\\s+\\[([\\d,\\s\\-]+)\\]",
+    "verse_inline_regex": "(?<![\\w])([1-9][0-9]{0,2})\\s+(?=[A-ZÄÖÜ\\wɛɔŋ])",
+    "chapter_range_from_header": true,
+    "skip_line_patterns": [
+      "^\\s*\\d+\\s+[A-Z\\s]+\\s+\\[",
+      "^[a-z]\\s+[A-Za-z]+\\.\\s+\\d+",
+      "^\\s*[a-z]\\s*$",
+      "^\\f",
+      "^\\s{20,}[A-Z][a-z]"
+    ]
+  }
+}
